@@ -1,4 +1,4 @@
-import 'package:e_commerce_app/Features/splash/presentation/views/splash_view.dart';
+import 'package:e_commerce_app/core/class/routes.dart';
 import 'package:flutter/material.dart';
 
 class FruitHub extends StatelessWidget {
@@ -6,9 +6,9 @@ class FruitHub extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return MaterialApp.router(
       debugShowCheckedModeBanner: false,
-      home: SplashView(),
+      routerConfig: Routes.router,
     );
   }
 }
